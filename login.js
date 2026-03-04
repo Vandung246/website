@@ -46,12 +46,4 @@ function showError(message) {
     const errorMessage = document.getElementById('errorMessage');
     errorMessage.textContent = message;
     errorMessage.style.display = 'block';
-
-    const loginBox = document.querySelector('.login-box');
-    if (loginBox) {
-        // Reset animation để có thể lắc lại nhiều lần
-        loginBox.classList.remove('shake');
-        void loginBox.offsetWidth;
-        loginBox.classList.add('shake');
-    }
 }
